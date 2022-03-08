@@ -40,7 +40,7 @@
             <div class="course-box">
               <a href="/start_lesson/{{$course->id}}">
                 <div class="course-image">
-                  <img src="/public/images/Course/{{$course->thumbnail}}" alt="" class="img-fluid">
+                  <img src="{{asset('images/Course/'.$course->thumbnail)}}" alt="" class="img-fluid">
                   <span class="play-btn"></span>
                 </div>
               </a>
@@ -91,7 +91,7 @@
             <div class="course-box">
               <a href="/course-detail/{{$course->id}}">
                 <div class="course-image">
-                  <img src="/public/images/Course/{{$course->thumbnail}}" alt="" class="img-fluid">
+                  <img src="{{asset('images/Course/'.$course->thumbnail)}}" alt="" class="img-fluid">
                   <span class="play-btn"></span>
                 </div>
               </a>

@@ -30,7 +30,7 @@
           <div class="user-dashboard-box">
             <div class="user-dashboard-sidebar">
               <div class="user-box">
-                <img src="../../../images/Login/{{$profile->image}}" alt="" class="img-fluid">
+                <img src="{{asset('images/Login/'.$profile->image)}}" alt="" class="img-fluid">
                 <div class="name">
                   <div class="name">{{$profile->name}} {{$profile->lname}}</div>
                 </div>

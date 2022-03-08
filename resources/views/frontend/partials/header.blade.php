@@ -13,8 +13,6 @@
   
     <!--Social sharing content-->
     <meta property="og:title" content="Home" />
-    <meta property="og:image" content="https://demo.academy-lms.com/default/uploads/system/home-banner.jpg">
-      <meta property="og:url" content="https://demo.academy-lms.com/default/home" />
       <meta property="og:description" content="Nice application">
       <meta property="og:type" content="Learning management system" />
       <!--Social sharing content-->

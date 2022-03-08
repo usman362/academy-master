@@ -11,17 +11,17 @@
         @endif
 
         <!-- Favicon -->
-		<link rel="shortcut icon" href="{{ url(asset('public/favicon.ico')) }}">
+		<link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ url('public/css/app.css') }}">
+        <link rel="stylesheet" href="{{ url(asset('css/app.css')) }}">
         @livewireStyles
 
         <!-- Scripts -->
-        <script src="{{ url('public/js/app.js') }}" defer></script>
+        <script src="{{ url(asset('js/app.js')) }}" defer></script>
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">

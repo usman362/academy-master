@@ -144,7 +144,7 @@
             <div class="row">
               <div class="col-lg-4">
                 <div class="about-instructor-image">
-                  <img src="/public/images/Login/{{$instructor->image}}" alt="" class="img-fluid">
+                  <img src="{{asset('images/Login/'.$instructor->image)}}" alt="" class="img-fluid">
                   <ul>
                     <!-- <li><i class="fas fa-star"></i><b>4.4</b> Average Rating</li> -->
                     
@@ -180,7 +180,7 @@
           <div class="course-sidebar natural">
             <div class="preview-video-box">
               {{-- <a data-toggle="modal" data-target="#CoursePreviewModal"> --}}
-                <img src="/public/images/Course/{{$course->thumbnail}}" alt="" class="img-fluid">
+                <img src="{{asset('images/Course/'.$course->thumbnail)}}" alt="" class="img-fluid">
                 {{-- <span class="preview-text">Preview this course</span>
                 <span class="play-btn"></span> --}}
               {{-- </a> --}}

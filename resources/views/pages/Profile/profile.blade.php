@@ -65,7 +65,7 @@
                   <label> Photo <small>(The image size should be any square image)</small> </label>
                   <div class="d-flex mt-2">
                     <div class="">
-                      <img class="rounded-circle img-thumbnail" src="/images/Login/{{$profile->image}}" alt="" style="height: 50px; width: 50px;">
+                      <img class="rounded-circle img-thumbnail" src="{{asset('images/Login/'.$profile->image)}}" alt="" style="height: 50px; width: 50px;">
                     </div>
                     <div class="flex-grow-1 pl-2">
                       <div class="input-group">

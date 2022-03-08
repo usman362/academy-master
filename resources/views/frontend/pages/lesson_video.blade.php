@@ -168,7 +168,7 @@
           </div> --}}
           <video class=""id="player" >
            
-            <source height="500" src="/public/Video/Lesson/{{$lessons->video_file}}" type="">
+            <source height="500" src="{{asset('Video/Lesson/'.$lessons->video_file)}}" type="">
           </video>    
           @else
           
@@ -179,10 +179,10 @@
 
             <div class="media-wrapper">
               @foreach (App\Models\Course::where('id',$lessons->course_id)->get() as $course)
-              <img src="/public/images/Course/{{$course->thumbnail}}" height="500" width="100%" alt="">
+              <img src="{{asset('images/Course/'.$course->thumbnail)}}" height="500" width="100%" alt="">
               @endforeach
                 <audio id="player2" preload="none" controls style="max-width:100%;">
-                        <source src="/public/Audio/Lesson/{{$lessons->audio_file}}" >
+                        <source src="{{asset('Audio/Lesson/'.$lessons->audio_file)}}" >
                     </audio>
             </div>
       

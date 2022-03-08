@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 @section('content')
-<section class="home-banner-area" style="background-image: url('/public/frontend/uploads/Kids-in-school-1024x493.jpeg');
+<section class="home-banner-area" style="background-image: url({{asset('frontend/uploads/Kids-in-school-1024x493.jpeg')}});
 background-position: center center;
 background-size: cover;
 background-repeat: no-repeat;
@@ -344,7 +344,7 @@ color: #fff;">
       <a href="/course-detail/{{$course->id}}" >
         <div class="course-box">
           <div class="course-image">
-            <img src="/public/images/Course/{{$course->thumbnail}}" alt="" class="img-fluid">
+            <img src="{{asset('images/Course/'.$course->thumbnail)}}" alt="" class="img-fluid">
             <style>
               .img-fluid{
                 height: 180px;
@@ -691,7 +691,7 @@ color: #fff;">
       <a href="/course-detail/{{$course->id}}" >
         <div class="course-box">
           <div class="course-image">
-            <img src="/public/images/Course/{{$course->thumbnail}}" alt="" class="img-fluid">
+            <img src="{{asset('images/Course/'.$course->thumbnail)}}" alt="" class="img-fluid">
             <style>
               .img-fluid{
                 height: 180px;

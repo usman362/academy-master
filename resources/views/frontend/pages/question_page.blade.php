@@ -147,10 +147,10 @@
 
           <video class="" id="player">
             {{-- <iframe height="500" src="{{$course->url}}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency allow="autoplay"></iframe> --}}
-            <source height="500" src="/public/Video/Lesson/{{$lessons->video_file}}" type="">
+            <source height="500" src="{{asset('Video/Lesson/'.$lessons->video_file)}}" type="">
           </video>                     
           <audio controls>
-            <source src="/public/Audio/Lesson/{{$lessons->audio_file}}">
+            <source src="{{asset('Audio/Lesson/'.$lessons->audio_file)}}">
          
           </audio>
           <script src="https://demo.academy-lms.com/default/assets/global/plyr/plyr.js"></script>

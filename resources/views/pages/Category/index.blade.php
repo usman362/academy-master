@@ -21,7 +21,7 @@
             
         <div class="col-md-6 col-lg-6 col-xl-4 on-hover-action" id="{{$category->id}}">
             <div class="card d-block">
-              <img class="card-img-top" src="/public/images/Category/{{$category->category_thumbnail}}" alt="Card image cap">
+              <img class="card-img-top" src="{{asset('images/Category/'.$category->category_thumbnail)}}" alt="Card image cap">
               <style>
                 .card-img-top{
                   height: 200px;

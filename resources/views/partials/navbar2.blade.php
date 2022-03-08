@@ -49,7 +49,7 @@
                 <a class="nav-link dropdown-toggle nav-user arrow-none mr-0" data-toggle="dropdown" id="topbar-userdrop"
                 href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 <span class="account-user-avatar">
-                    <img src="/public/images/Login/{{Auth::User()->image}}" alt="user-image" class="rounded-circle">
+                    <img src="{{asset('images/Login/'.Auth::User()->image)}}" alt="user-image" class="rounded-circle">
                 </span>
                 <span  style="color: #fff;">
                                         <span class="account-user-name">{{Auth::User()->name}} {{Auth::User()->lname}}</span>

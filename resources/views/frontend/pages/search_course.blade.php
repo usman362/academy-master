@@ -42,7 +42,7 @@
                 <div class="course-box-2">
                   <div class="course-image">
                     <a href="/course-detail/{{$course->id}}">
-                      <img src="/public/images/Course/{{$course->thumbnail}}" alt="" class="img-fluid">
+                      <img src="{{asset('images/Course/'.$course->thumbnail)}}" alt="" class="img-fluid">
                       <style>
                           .img-fluid{
                               height: 146px !important;

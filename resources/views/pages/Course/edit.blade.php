@@ -400,7 +400,7 @@
                                   <div class="col-md-10">
                                     <div class="wrapper-image-preview" style="margin-left: -6px;">
                                       <div class="box" style="width: 250px;">
-                                        <div class="js--image-preview" style="background-image: url(/public/images/Course/{{$courses->thumbnail}}); background-color: #F5F5F5;">
+                                        <div class="js--image-preview" style="background-image: url({{asset('images/Course/'.$courses->thumbnail)}}); background-color: #F5F5F5;">
                                         </div>
                                         <div class="upload-options">
                                           <label for="course_thumbnail" class="btn">

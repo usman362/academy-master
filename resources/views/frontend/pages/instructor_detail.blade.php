@@ -18,7 +18,7 @@
         <div class="col-lg-3">
           <div class="instructor-left-box text-center">
             <div class="instructor-image">
-              <img src="/public/images/Login/{{$instructor->image}}" alt="" class="img-fluid">
+              <img src="{{asset('images/Login/'.$instructor->image)}}" alt="" class="img-fluid">
             </div>
             <div class="instructor-social">
               <ul>

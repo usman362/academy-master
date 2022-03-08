@@ -165,7 +165,7 @@
           </div> --}}
           <video class="" id="player">
            
-            <source height="500" src="/public/Video/Course/{{$course->video_file}}" type="video/mp4">
+            <source height="500" src="{{asset('Video/Course/'.$course->video_file)}}" type="video/mp4">
           </video>    
           
           @else
@@ -183,9 +183,9 @@
 
 
       <div class="media-wrapper">
-        <img src="/public/images/Course/{{$course->thumbnail}}" height="500" width="100%" alt="">
+        <img src="{{asset('images/Course/'.$course->thumbnail)}}" height="500" width="100%" alt="">
           <audio id="player2" preload="none" controls style="max-width:100%;">
-                  <source src="/public/Audio/Course/{{$course->audio_file}}" >
+                  <source src="{{asset('Audio/Course/'.$course->audio_file)}}" >
               </audio>
       </div>
 

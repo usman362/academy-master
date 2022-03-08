@@ -42,7 +42,7 @@
   <tr role="row" class="odd">
     <td class="sorting_1">{{$teacher->id}}</td>
     <td>
-      <img src="/public/images/Login/{{$teacher->image}}" alt="" height="50" width="50" class="img-fluid rounded-circle img-thumbnail">
+      <img src="{{asset('images/Login/'.$teacher->image)}}" alt="" height="50" width="50" class="img-fluid rounded-circle img-thumbnail">
     </td>
     <td>{{$teacher->name}} {{$teacher->lname}} </td>
     <td>{{$teacher->email}}</td>
